@@ -1,0 +1,156 @@
+.filter {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 100px;
+	margin-right: 32px;
+	width: 208px;
+}
+
+.filter__item {
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 0.7px solid #DDDADA;
+}
+
+.filter__type-title {
+	font-size: 18px;
+	letter-spacing: 0.4px;
+}
+
+.filter__price {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 19px;
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+
+		width: 14px;
+		height: 1px;
+		top: 12px;
+		left: calc(50% - 7px);
+
+		background-color: #585757;
+	}
+}
+
+.filter__price-input {
+	width: 84px;
+	height: 28px;
+	margin-top: -1px;
+
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 10px;
+	letter-spacing: 0.05em;
+	color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+
+	border: 0.7px solid #9F9E9E;
+	box-sizing: border-box;
+	border-radius: 2px;
+
+	-webkit-appearance: none;
+	-moz-appearance: textfield;
+
+	&:hover,
+	&:focus {
+		-moz-appearance: number-input;
+	}
+	
+	&::-webkit-inner-spin-button, 
+	&::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0; 
+	}
+}
+
+.filter__guitar-types {
+	list-style: none;
+	margin: 0;
+	margin-bottom: 19px;
+	padding: 0;
+}
+
+.filter__checkbox-input:disabled:checked + .filter__checkbox {
+
+	&::after {
+		display: none;
+	}
+}
+
+.filter__checkbox-input:disabled + .filter__checkbox {
+	cursor: not-allowed;
+	color: #DDDDDD;
+
+	&::before {
+		background: #F7F3F3;
+	}
+
+	&:hover::before {
+		border: 0.7px solid #9F9E9E;
+	}
+}
+
+.filter__checkbox-input:checked + .filter__checkbox::after {
+	display: block;
+	position: absolute;
+	content: "";
+
+	width: 24px;
+	height: 24px;
+
+	left: 0;
+	top: 0;
+
+	background-position: center;
+	background-image: url("../../images/vector/check.svg");
+	background-repeat: no-repeat;
+}
+
+.filter__checkbox {
+	position: relative;
+
+	padding: 2px 0 3px 40px;
+	margin: 0;
+	margin-bottom: 12px;
+
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+	letter-spacing: 0.5px;
+
+	cursor: pointer;
+
+	&::before {
+		display: block;
+		position: absolute;
+		content: "";
+
+		width: 24px;
+		height: 24px;
+
+		left: 0;
+		top: 0;
+
+		border: 0.7px solid #9F9E9E;
+		box-sizing: border-box;
+		border-radius: 2px;
+	}
+
+	&:hover::before {
+		border: 0.7px solid #C1C1C1;
+	}
+}
+
+.filter__strings {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

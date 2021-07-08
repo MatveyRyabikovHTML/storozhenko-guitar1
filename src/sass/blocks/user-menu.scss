@@ -1,0 +1,64 @@
+.user-menu {
+	display: flex;
+	margin-right: 4px;
+	margin-top: 15px;
+	padding: 0;
+	list-style: none;
+}
+
+.user-menu__item {
+	position: relative;
+	margin-left: 10px;
+
+	&--basket {
+		margin-left: 8px;
+		margin-right: 2px;
+	}
+}
+
+.user-menu__link {
+	display: flex;
+	justify-content: center;
+
+	width: 40px;
+	height: 40px;
+}
+
+.user-menu__link-icon {
+	display: block;
+	background-color: #000;
+	align-self: center;
+	width: 14px;
+	height: 14px;
+
+	&--map {
+		height: 17px;
+		mask-image: url("../../images/vector/map.svg");
+	}
+	
+	&--search {
+		mask-image: url("../../images/vector/search.svg");
+	}
+	
+	&--basket {
+		mask-image: url("../../images/vector/basket.svg");
+	}
+
+	&:hover {
+		background-color: rgba(71, 71, 71, 1);
+	}
+
+	&:active {
+		background-color: rgba(71, 71, 71, 0.5);
+	}
+}
+
+.user-menu__goods {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+
+	font-size: 9px;
+	line-height: 12px;
+	color: #F20505;
+}

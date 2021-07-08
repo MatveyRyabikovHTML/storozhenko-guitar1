@@ -1,0 +1,15 @@
+.logo {
+	display: block;
+
+	width: 67px;
+	height: 70px;
+
+	background-image: url("../../images/vector/logo.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	flex-shrink: 0;
+	
+	&--footer {
+		background-image: url("../../images/vector/logo-footer.svg");
+	}
+}

@@ -1,0 +1,184 @@
+.footer {
+	position: relative;
+	min-height: 273px;
+	background: #3F3F3F;
+	margin-top: 139px;
+	
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		
+		height: 298px;
+		width: 894px;
+		
+		top: -89px;
+		left: calc(50% - 584px);
+		
+		transform: rotate(180deg);
+		
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url("../../images/background-guitar.png");
+		z-index: -1;
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+
+		height: 6px;
+		width: 100%;
+
+		top: -16px;
+
+		background-color: #3F3F3F;
+	}
+}
+
+.footer__wrapper {
+	display: flex;
+	padding-top: 61px;
+}
+
+.footer-menu {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+	font-size: 10px;
+	line-height: 12px;
+
+	color: #FFFFFF;
+}
+
+.footer-menu__title {
+	margin: 0;
+	margin-top: 8px;
+
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 42px;
+	text-align: start;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+
+	opacity: 0.7;
+
+	&--contacts {
+		margin-top: 12px;
+		line-height: 35px;
+	}
+}
+
+.footer-menu__item {
+	width: 146px;
+	margin-right: 14px;
+
+	&--info {
+		margin-left: 2px;
+	}
+
+	&--contacts {
+		margin: 0;
+		margin-left: 78px;
+		width: 139px;
+	}
+}
+
+.footer-menu__goods-list {
+	list-style: none;
+	margin: 0;
+	margin-top: -2px;
+	padding: 0;
+}
+
+.footer-menu__good-link {
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 20px;
+	letter-spacing: 0.12em;
+	color: #FFFFFF;
+
+	&:hover {
+		color: #bebebe;
+	}
+
+	&:active {
+		color: rgba(170, 170, 170, 0.5);
+	}
+}
+
+.footer-menu__text {
+	margin-top: 2px;
+	margin-bottom: 12px;
+	width: 141px;
+
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	color: #FFFFFF;
+	letter-spacing: 0.3px;
+}
+
+.footer-menu__info-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-menu__info-item {
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 20px;
+	letter-spacing: 0.12em;
+	color: #FFFFFF;
+}
+
+.footer-menu__info-link {
+	color: #FFFFFF;
+
+	&:hover {
+		color: #bebebe;
+	}
+
+	&:active {
+		color: rgba(170, 170, 170, 0.5);
+	}
+}
+
+.footer-menu__contacts-text {
+	margin-top: 2px;
+	margin-bottom: 12px;
+
+	letter-spacing: 1.2px;
+}
+
+.footer-menu__text-icon {
+	width: 10px;
+	height: 10px;
+
+	padding-left: 14px;
+	margin-top: 2px;
+	margin-bottom: 12px;
+
+	line-height: 14px;
+	letter-spacing: 1px;
+
+	background-size: auto;
+	background-repeat: no-repeat;
+
+	&--phone {
+		background-position-y: 2px;
+		background-image: url("../../images/vector/phone.svg")
+	}
+
+	&--watch {
+		background-position: -1px -1px;
+		background-image: url("../../images/vector/watch.svg")
+	}
+}

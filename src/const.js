@@ -1,0 +1,5 @@
+export const MAX_PAGE_GUITARS = 9;
+
+export const INTERMEDIATE_PAGINATION_VALUE = 4;
+
+export const AMOUNT_SIDE_ACTIVE_PAGE_BUTTONS = 2;

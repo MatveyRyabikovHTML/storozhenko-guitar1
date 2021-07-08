@@ -1,0 +1,42 @@
+.breadcrumbs {
+	display: flex;
+	list-style: none;
+
+	margin: 0;
+	margin-bottom: 19px;
+	padding: 0;
+	width: 100%;
+}
+
+.breadcrumbs__item {
+	position: relative;
+	display: block;
+	margin-right: 36px;
+
+	&::before {
+		display: block;
+		position: absolute;
+		content: "";
+
+		width: 13px;
+		height: 8px;
+
+		top: 7px;
+		left: -24px;
+
+		background-image: url("../../images/vector/bread-crumbs-arrow.svg");
+		background-repeat: no-repeat;
+	}
+
+	&:first-child::before {
+		display: none;
+	}
+}
+
+.breadcrumbs__link {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #474747;
+	letter-spacing: 0.6px;
+}

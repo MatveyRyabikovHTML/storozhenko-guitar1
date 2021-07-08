@@ -1,0 +1,284 @@
+.basket {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: start;
+	margin-bottom: 32px;
+}
+
+.basket__title {
+	margin-top: 29px;
+	letter-spacing: -0.8px;
+}
+
+.basket__goods {
+	list-style: none;
+	margin: 0;
+	margin-top: 8px;
+	padding: 0;
+	width: 100%;
+
+	border-top: 0.7px solid #DDDADA;
+}
+
+.basket__item {
+	display: flex;
+
+	min-height: 163px;
+	width: 100%;
+	border-bottom: 0.7px solid #DDDADA;
+}
+
+.basket__item-info {
+	width: 260px;
+}
+
+.basket__item-button-cross {
+	width: 11px;
+	height: 11px;
+	margin: 23px 26px 0 4px;
+
+	border: none;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url("../../images/vector/cross.svg");
+}
+
+.basket__item-image {
+	width: 52px;
+	height: 131px;
+	margin: 18px 67px 0 0;
+}
+
+.basket__item-title {
+	margin-top: 20px;
+
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 15px;
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.basket__item-text {
+	margin: -2px 0 8px 0;
+
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 15px;
+	letter-spacing: 1.1px;
+	color: #000000;
+}
+
+.basket__item-price {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+
+	margin: 9px -3px 0 96px;
+}
+
+.basket__item-price-one {
+	display: inline-block;
+
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 15px;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+.basket__item-amount-controls {
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: -62px;
+
+	border: 1px solid #9F9E9E;
+}
+
+.basket__item-price-total {
+	display: inline-block;
+
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 15px;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+.basket__item-amount {
+	display: inline-block;
+	margin: 0;
+	min-width: 28px;
+
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 0.05em;
+	color: #9F9E9E;
+
+	border-left: 1px solid #9F9E9E;
+	border-right: 1px solid #9F9E9E;
+
+	text-align: center;
+}
+
+.basket__button-amount-change {
+	height: 100%;
+	min-width: 25px;
+	border: none;
+	background-color: transparent;
+
+	color: rgba(159, 158, 158, 1);
+}
+
+.basket__total {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 20px;
+}
+
+.basket__promocode {
+	display: flex;
+	flex-wrap: wrap;
+	width: 404px;
+	
+	&--fail::after {
+		display: block;
+		position: relative;
+		content: "Промокод не действителен";
+
+		bottom: -5px;
+		left: 9px;
+
+		font-size: 12px;
+		color: tomato;
+	}
+}
+
+.basket__promocode-title {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 15px;
+	letter-spacing: 1.2px;
+	color: #000000;
+}
+
+.basket__promocode-info {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 19px;
+
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.9px;
+	color: #000000;
+}
+
+.basket__promocode-input {
+	position: relative;
+	width: 170px;
+	margin-right: 33px;
+
+	border: 2px solid #DDDADA;
+	box-sizing: border-box;
+	border-radius: 2px;
+
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+.basket__promocode-button {
+	padding-left: 22px;
+	padding-right: 15px;
+
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 15px;
+	letter-spacing: 1.2px;
+	color: #FFFFFF;
+
+	border: none;
+	background: #C1C1C1;
+	border-radius: 2px;
+
+	&:hover {
+		background: #585757;
+	}
+
+	&:active {
+		background: #9F9E9E;
+	}
+}
+
+.basket__total-price-amount {
+	margin-right: 5px;
+
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 15px;
+	letter-spacing: 1.2px;
+	color: #000000;
+
+	align-self: flex-end;
+}
+
+.basket__total-price {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.basket__total-price-submit {
+	padding: 0 35px 0 33px;
+
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 36px;
+	letter-spacing: 1.2px;
+	color: #FFFFFF;
+
+	background: #E27F00;
+	border: none;
+	border-radius: 2px;
+
+	
+	&:hover {
+		background: #FFA839;
+	}
+
+	&:active {
+		background: #DA8B26;
+	}
+}
+
+.basket__button-catalog {
+	display: inline-block;
+	padding: 0 20px;
+	
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+
+	background: #C1C1C1;
+	border-radius: 2px;
+
+	&:hover {
+		background: #585757;
+	}
+
+	&:active {
+		background: #9F9E9E;
+	}
+}

@@ -1,0 +1,14 @@
+.goods {
+	display: inline-block;
+	flex-grow: 1;
+}
+
+.goods__list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+
+	max-width: 700px;
+	margin: 0;
+	padding: 0;
+}

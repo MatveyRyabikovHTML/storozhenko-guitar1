@@ -1,0 +1,45 @@
+.social {
+	margin-left: 1px;
+	margin-right: 102px;
+}
+
+.social__list {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	margin-top: 35px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.social__link {
+	display: block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 24px;
+	height: 24px;
+	margin: 20px 22px 0 0;
+	background-color: #FFFFFF;
+
+	&--facebook {
+		mask-image: url("../../images/vector/facebook.svg");
+	}
+
+	&--instagram {
+		mask-image: url("../../images/vector/instagram.svg");
+	}
+
+	&--twitter {
+		mask-image: url("../../images/vector/twitter.svg");
+	}
+
+	&:hover {
+		background-color: #bebebe;
+	}
+
+	&:active {
+		background-color: rgba(170, 170, 170, 0.5);
+	}
+}
